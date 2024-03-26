@@ -1,0 +1,20 @@
+.dom-tree__img {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.dom-tree__figure_img, .dom-tree__img_width {
+  width: 100%;
+}
+
+.dom-tree__figure {
+  margin-bottom: 30px;
+  border-top: 1px solid #000;
+}
+
+.dom-tree__figure_caption {
+  padding: 15px 30px;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}

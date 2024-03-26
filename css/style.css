@@ -1,5 +1,11 @@
 @import "normalize.css";
 @import "global.css";
+@import "heading.css";
+@import "content.css";
+@import "order.css";
+@import "dom-tree.css";
+@import "last-element.css";
+@import "summary.css";
 
 
 

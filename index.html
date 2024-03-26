@@ -12,7 +12,6 @@
 </head>
 <body>
   <article>
-
     <section class="heading">
       <div class="container">
         <h1 class="heading__title">Отступы в вёрстке: margin и padding</h1>
@@ -21,45 +20,52 @@
       </div>
     </section>
 
-
     <section class="content">
-      <div class="container">
-        <h2 class="content__title">Содержание:</h2>
-        <ol class="content__list">
-          <li class="content__item">Отступ задается от предыдущего элемента к следующему</li>
-          <li class="content__item">Отступ задается последнему возможному элементу в DOM-дереве</li>
-          <li class="content__item">Для последнего элемента группы отступ обнуляется</li>
-        </ol>
+      <div class="container container_grey">
+        <h2 class="title__middle">Содержание:</h2>
+        <nav class="content__navigation">
+          <ol class="content__list">
+            <li class="content__item"><a href="#order">Отступ задается от предыдущего элемента к следующему</a></li>
+            <li class="content__item"><a href="#dom-tree">Отступ задается последнему возможному элементу в DOM-дереве</a></li>
+            <li class="content__item"><a href="#last-element">Для последнего элемента группы отступ обнуляется</a></li>
+          </ol>
+        </nav>
       </div>
     </section>
 
-
-    <section class="order">
+    <section id="order">
       <div class="container">
-        <h3 class="order__title">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h3>
-        <img class="order__img" src="img/order/image1.jpg" alt="Картинка с примером применения margin">
-        <p class="order__descr">ВАЖНО: margin всегда задают от предыдущего элемента к следующему.</p>
-        <p class="order__descr">Свойство margin необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется margin-right и margin-bottom.</p>
-        <p class="order__descr">(!) Свойства margin-left и margin-top используются крайне редко.</p>
-        <p class="order__descr">Для padding верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.</p>
-        <p class="order__descr">Отступ внутри блока сверху или слева реализуется через padding-top и padding-left родителя.</p>
-        <p class="order__descr">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
-        <p class="order__descr">Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
-        <img class="order__img" src="img/order/image2.jpg" alt="Картинка с примером применения padding">
+        <h3 class="title__subtitle">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h3>
+        <div class="order__block_img">
+          <img class="order__img" src="img/order/image1.jpg" alt="Картинка с примером применения margin">
+        </div>
+        <div class="order__block_text">
+          <p class="order__descr">ВАЖНО: margin всегда задают от предыдущего элемента к следующему.</p>
+          <p class="order__descr">Свойство margin необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется margin-right и margin-bottom.</p>
+          <p class="order__descr">(!) Свойства margin-left и margin-top используются крайне редко.</p>
+          <p class="order__descr">Для padding верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.</p>
+        </div>
+        <div class="order__block_text">
+          <p class="order__descr">Отступ внутри блока сверху или слева реализуется через padding-top и padding-left родителя.</p>
+          <p class="order__descr">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
+          <p class="order__descr">Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
+        </div>
+        <div class="order__block_img">
+          <img class="order__img" src="img/order/image2.jpg" alt="Картинка с примером применения padding">
+        </div>
       </div>
     </section>
 
-
-    <section class="dom-tree">
+    <section id="dom-tree">
       <div class="container">
-        <h3 class="dom-tree__title">Отступ задается последнему возможному элементу в DOM-дереве</h3>
+        <h3 class="title__subtitle">Отступ задается последнему возможному элементу в DOM-дереве</h3>
         <p class="dom-tree__descr">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
-        <img class="dom-tree__img" src="img/dom-tree/image3.jpg" alt="Картинка с примером применения margin между элементами DOM-дерева">
+        <img class="dom-tree__img dom-tree__img_width" src="img/dom-tree/image3.jpg" alt="Картинка с примером применения margin между элементами DOM-дерева">
         <img class="dom-tree__img" src="img/dom-tree/image4.jpg" alt="Картинка с наглядным примером отображения margin">
         <p class="dom-tree__descr">Отступ делают за счёт соседних элементов, а не дочерних:</p>
-        <figure>
-          <img class="dom-tree__img" src="img/dom-tree/image5.jpg" alt="Картинка с нагладным примером отступа за счет соседних элементов">
-          <figcaption class="dom-tree__caption">ВАЖНО: здесь .list-item — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</figcaption>
+        <figure class="dom-tree__figure">
+          <img class="dom-tree__figure_img" src="img/dom-tree/image5.jpg" alt="Картинка с нагладным примером отступа за счет соседних элементов">
+          <figcaption class="dom-tree__figure_caption">ВАЖНО: здесь .list-item — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</figcaption>
         </figure>
         <p class="dom-tree__descr">Казалось бы, можно задать отступ параграфу &lt;p&gt;, либо обёртке &lt;article&gt; для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
         <p class="dom-tree__descr">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>  
@@ -70,19 +76,18 @@
       </div>
     </section>
 
-
-    <section class="last-element">
+    <section id="last-element">
       <div class="container">
-        <h3 class="last-element__title">Для последнего элемента группы отступ всегда обнуляется</h3>
+        <h3 class="title__subtitle">Для последнего элемента группы отступ всегда обнуляется</h3>
         <p class="last-element__descr">Для наглядности возьмём наш предыдущий пример с рецептами</p>
         <p class="last-element__descr">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
         <img class="last-element__img" src="img/last-element/image8.jpg" alt="Картинка с наглядным примером применения отступов между элементами">
         <p class="last-element__descr">В соответствии со вторым принципом: последний margin обнуляется, а нижний отступ задаётся через padding для section. Я чаще всего задаю padding для секции с обоих сторон, если расстояние между секциями 100px задаю секциям padding-top:50px и padding-bottom:50px.</p>
-        <img src="img/last-element/image9.jpg" alt="Картинка с наглядным примером отступов">
-        <img class="last-element__img" src="img/last-element/image10.jpg" alt="Картинка с примером кода html">
-        <img class="last-element__img" src="img/last-element/image11.jpg" alt="Картинка с примером кода html">
+        <img class="last-element__img" src="img/last-element/image9.jpg" alt="Картинка с наглядным примером отступов">
+        <img class="last-element__img last-element__img_width" src="img/last-element/image10.jpg" alt="Картинка с примером кода html">
+        <img class="last-element__img last-element__img_width" src="img/last-element/image11.jpg" alt="Картинка с примером кода html">
         <p class="last-element__descr">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
-        <img class="last-element__img" src="img/last-element/image12.jpg" alt="Картинка меню для примера">
+        <img class="last-element__img last-element__img_width" src="img/last-element/image12.jpg" alt="Картинка меню для примера">
         <img class="last-element__img" src="img/last-element/image13.jpg" alt="Картинка с кодом html для меню выше">
         <p class="last-element__descr">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
         <img class="last-element__img" src="img/last-element/image14.jpg" alt="Картинка с кодом css для меню выше">
@@ -92,10 +97,9 @@
       </div>
     </section>
 
-
     <section class="summary">
-      <div class="container">
-        <h2 class="summary__title">Подытожим:</h2>
+      <div class="container container_grey">
+        <h2 class="title__middle">Подытожим:</h2>
         <ul class="summary__list">
           <li class="summary__item">отступы задаём от предыдущего элемента к следующему</li>
           <li class="summary__item">используем только margin-right и margin-bottom</li>
@@ -106,11 +110,7 @@
         <p class="summary__descr">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
       </div>
     </section>
-  
-
   </article>
-  
-
 
 </body>
 </html>

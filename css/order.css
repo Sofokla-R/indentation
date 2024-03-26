@@ -1,0 +1,22 @@
+.order__block_img, .order__block_text {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.order__block_img {
+  max-width: 560px;
+}
+
+.order__block_img:not(:last-child) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.order__block_text {
+  max-width: 480px;
+}
+
+.order__block_text:not(:first-child) {
+  margin-right: 40px;
+  margin-bottom: 0;
+}
