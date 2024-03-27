@@ -3,20 +3,27 @@
   vertical-align: top;
 }
 
+.order__block:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .order__block_img {
   max-width: 560px;
 }
 
-.order__block_img:not(:last-child) {
+.order__block_img:first-child {
   margin-right: 30px;
-  margin-bottom: 30px;
 }
 
 .order__block_text {
   max-width: 480px;
 }
 
-.order__block_text:not(:first-child) {
+.order__block_text:first-child {
   margin-right: 40px;
-  margin-bottom: 0;
+}
+
+.span__bold {
+  font-weight: 700;
+  font-style: normal;
 }

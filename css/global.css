@@ -86,14 +86,16 @@ p:last-child {
   font-weight: 700;
   font-size: 44px;
   margin-bottom: 20px;
-  padding-top: 25px;
-  padding-left: 45px;
 }
 
 .title__subtitle {
   font-weight: 900;
   font-size: 36px;
   margin-bottom: 30px;
+}
+
+span {
+  font-style: italic;
 }
 
 

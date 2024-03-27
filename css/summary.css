@@ -1,5 +1,4 @@
 .summary__list {
-  padding-left: 46px;
   margin-bottom: 30px;
 }
 
@@ -13,8 +12,4 @@
 
 .summary__item::before {
   content: "— ";
-}
-
-.summary__descr {
-  padding: 0 30px 25px 45px;
 }
